@@ -1,4 +1,5 @@
 import SectionReveal from '../components/SectionReveal'
+import { ServiceIcons } from '../components/Icons'
 import { services } from '../data/content'
 import { SectionLabel } from './Summary'
 
@@ -26,11 +27,11 @@ export default function Services() {
             >
               <div className="flex items-center gap-3 mb-3">
                 <span
-                  className="w-9 h-9 flex items-center justify-center rounded-xl text-lg leading-none transition-colors duration-300"
-                  style={{ background: 'var(--border)' }}
-                  role="img" aria-label={service.title}
+                  className="w-9 h-9 flex items-center justify-center rounded-xl transition-colors duration-300"
+                  style={{ background: 'var(--border)', color: 'var(--accent-text)' }}
+                  aria-hidden="true"
                 >
-                  {service.icon}
+                  {ServiceIcons[service.icon]}
                 </span>
                 <h3 className="font-heading font-semibold text-sm transition-colors duration-200"
                   style={{ color: 'var(--text-primary)' }}>

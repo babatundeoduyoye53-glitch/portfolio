@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import SectionReveal from '../components/SectionReveal'
+import { ToolIcons } from '../components/Icons'
 import { skills } from '../data/content'
 import { SectionLabel } from './Summary'
 
@@ -99,7 +100,9 @@ export default function Skills() {
                 e.currentTarget.style.background = 'var(--card-bg)'
               }}
             >
-              <span className="text-xl leading-none" role="img" aria-label={tool.name}>{tool.icon}</span>
+              <span className="flex items-center justify-center" style={{ color: 'var(--text-secondary)' }} aria-hidden="true">
+                {ToolIcons[tool.icon]}
+              </span>
               <span className="font-body text-[11px] text-center leading-tight"
                 style={{ color: 'var(--text-muted)' }}>{tool.name}</span>
             </div>

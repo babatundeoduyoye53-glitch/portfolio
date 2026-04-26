@@ -91,12 +91,12 @@ export const skills = {
     { name: 'Performance & a11y', level: 85 },
   ],
   tools: [
-    { name: 'VS Code', icon: '⌨️' },
-    { name: 'Figma', icon: '🎨' },
-    { name: 'GitHub', icon: '🐙' },
-    { name: 'Chrome DevTools', icon: '🔍' },
-    { name: 'Vercel', icon: '▲' },
-    { name: 'Netlify', icon: '🌐' },
+    { name: 'VS Code', icon: 'vscode' },
+    { name: 'Figma', icon: 'figma' },
+    { name: 'GitHub', icon: 'github' },
+    { name: 'DevTools', icon: 'devtools' },
+    { name: 'Vercel', icon: 'vercel' },
+    { name: 'Netlify', icon: 'netlify' },
   ],
 }
 
@@ -137,22 +137,22 @@ export const projects = [
 
 export const services = [
   {
-    icon: '⚡',
+    icon: 'frontend',
     title: 'Frontend Development',
     description: 'Pixel-perfect, performant UIs built with React and Next.js. From landing pages to complex SPAs.',
   },
   {
-    icon: '🎨',
+    icon: 'design',
     title: 'UI / UX Implementation',
     description: 'Translating Figma designs into production-ready code with attention to spacing, motion, and accessibility.',
   },
   {
-    icon: '🧩',
+    icon: 'components',
     title: 'Component Libraries',
     description: 'Scalable design systems and reusable component libraries with Storybook documentation.',
   },
   {
-    icon: '🚀',
+    icon: 'performance',
     title: 'Performance Optimisation',
     description: 'Auditing and improving Core Web Vitals, bundle size, and rendering performance.',
   },
