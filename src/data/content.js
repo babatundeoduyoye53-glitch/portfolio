@@ -102,6 +102,14 @@ export const skills = {
 
 export const projects = [
   {
+    name: 'Meridian Education Group',
+    description: 'Premium multi-page higher-education website with a fully functional admin dashboard. Built with vanilla HTML, CSS & JS — featuring hero sliders, filterable programme grids, multi-step application forms, analytics charts, and localStorage-powered data management.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Chart.js', 'Responsive'],
+    liveUrl: null,
+    githubUrl: 'https://github.com/babatunde-oduyoye',
+    featured: true,
+  },
+  {
     name: 'Design System v2',
     description: 'Headless component library built with Radix UI primitives and Tailwind design tokens. Used across 4 product teams.',
     tags: ['React', 'TypeScript', 'Tailwind', 'Radix UI'],
@@ -123,7 +131,7 @@ export const projects = [
     tags: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
     liveUrl: null,
     githubUrl: 'https://github.com/babatunde-oduyoye',
-    featured: true,
+    featured: false,
   },
   {
     name: 'Dev CLI Toolkit',
