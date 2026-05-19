@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useTheme } from './hooks/useTheme'
+import Preloader from './components/Preloader'
 import Hero from './sections/Hero'
 import Summary from './sections/Summary'
 import Services from './sections/Services'
@@ -18,8 +19,11 @@ const SECTION_IDS = nav.map(n => n.href.replace('#', ''))
 export default function App() {
   const { theme, toggle } = useTheme()
   const [activeSection, setActiveSection] = useState('hero')
+  const [loaded, setLoaded] = useState(false)
+  const handlePreloaderDone = useCallback(() => setLoaded(true), [])
 
   useEffect(() => {
+    if (!loaded) return
     const observers = []
     SECTION_IDS.forEach(id => {
       const el = document.getElementById(id)
@@ -36,6 +40,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-page font-body antialiased transition-colors duration-300">
+      {!loaded && <Preloader onDone={handlePreloaderDone} />}
       <Hero activeSection={activeSection} theme={theme} toggleTheme={toggle} />
       <main className="max-w-4xl mx-auto px-6 md:px-10">
         <Summary />
