@@ -105,7 +105,7 @@ export const projects = [
     name: 'Meridian Education Group',
     description: 'Premium multi-page higher-education website with a fully functional admin dashboard. Built with vanilla HTML, CSS & JS — featuring hero sliders, filterable programme grids, multi-step application forms, analytics charts, and localStorage-powered data management.',
     tags: ['HTML5', 'CSS3', 'JavaScript', 'Chart.js', 'Responsive'],
-    liveUrl: null,
+    liveUrl: 'https://meridian-education.vercel.app',
     githubUrl: 'https://github.com/babatundeoduyoye53-glitch/meridian-education',
     featured: true,
   },
